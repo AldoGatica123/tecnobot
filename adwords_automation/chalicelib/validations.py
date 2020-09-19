@@ -4,8 +4,8 @@ import logging
 logger = logging.getLogger()
 logger.setLevel(logging.ERROR)
 
-available_locations = ['MEXICO', 'GUATEMALA', 'EL SALVADOR', 'HONDURAS', 'NICARAGUA', 'COSTA RICA', 'PANAMA',
-                       'COLOMBIA']
+available_locations = ['Mexico', 'Guatemala', 'El Salvador', 'Honduras', 'Nicaragua', 'Costa Rica', 'Panama',
+                       'Colombia']
 available_packages = ['MARKETING_COMBO_1', 'MARKETING_COMBO_2', 'MARKETING_COMBO_3']
 body_fields = ['business_name', 'description', 'history', 'location', 'marketing_package', 'phone', 'psid',
                'search_terms', 'slogan', 'website']

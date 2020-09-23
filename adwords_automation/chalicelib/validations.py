@@ -86,7 +86,7 @@ def validate_website(website):
 
 
 def validate_location(location):
-    result = location.upper() in available_locations
+    result = location in available_locations
     if not result:
         logger.error('Error bad format on location: ' + location)
     return result

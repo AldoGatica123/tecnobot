@@ -46,7 +46,7 @@ class DynamoDBCampaigns(CampaignDB):
 
     def list_eligible_items(self, psid):
         logger.info('Listing active paid campaign')
-        response = self._table.scan(FilterExpression=Attr('psid').eq(psid) and Attr('active').eq(True))
+        response = self._table.scan(FilterExpression=Attr('psid').eq(psid) & Attr('active').eq(True))
         logger.info(response['Items'])
         return response['Items']
 
